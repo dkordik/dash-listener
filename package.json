@@ -1,0 +1,15 @@
+{
+  "name": "dash-listener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Kordik",
+  "license": "ISC",
+  "dependencies": {
+    "node-dash-button": "0.0.12",
+    "request-promise": "^0.4.3"
+  }
+}

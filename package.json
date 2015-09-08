@@ -9,7 +9,7 @@
   "author": "Dan Kordik",
   "license": "ISC",
   "dependencies": {
-    "node-dash-button": "0.0.12",
+    "node-dash-button": "0.1.0",
     "request-promise": "^0.4.3"
   }
 }

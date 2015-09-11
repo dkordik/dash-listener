@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "player-listener": "babel-node lib/music-player-pauser/player-listener.js",
+    "start": "sudo babel-node index.js & npm run player-listener"
   },
   "author": "Dan Kordik",
   "license": "ISC",
   "dependencies": {
+    "babel": "^5.8.23",
+    "fsevents": "^1.0.0",
     "node-dash-button": "0.0.12",
-    "request-promise": "^0.4.3"
+    "nowplaying": "^1.0.6",
+    "request-promise": "^0.4.3",
+    "run-applescript": "^1.0.1"
   }
 }

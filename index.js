@@ -1,11 +1,15 @@
-import registerDashButton from 'node-dash-button';
-import { toggleLights } from './lib/lights.js';
+import ButtonRegistrar from './lib/button-registrar.js';
+var buttonRegistrar = new ButtonRegistrar();
 
-var lightSwitch = registerDashButton("74:c2:46:0c:4a:c9");
+import { toggleLights } from './lib/lights';
 
-console.log("Listening for Dash button presses...");
-
-lightSwitch.on("detected", () => {
-	console.log("Light switch pressed.", new Date());
+buttonRegistrar.add("74:c2:46:0c:4a:c9", "Light switch", () => {
 	toggleLights(1);
+});
+
+import MusicPlayerPauser from './lib/music-player-pauser';
+const musicPlayerPauser = new MusicPlayerPauser();
+
+buttonRegistrar.add("74:75:48:6b:b4:91", "Play button", () => {
+	musicPlayerPauser.playPause();
 });

@@ -4,4 +4,6 @@ Repo for my Amazon Dash button listener that does different actions when I press
 
 A fair amount of this is going to be specific to my setup, but still might be useful as a forking point :)
 
-Note: Must be run with elevated privileges, because the mechanism for listening to presses is to sniff the network for ARP requests.
+Note: Must be run with elevated privileges, because the mechanism for listening to presses is to sniff the network for ARP requests. `sudo` is contained within the `npm start` task.
+
+Run with `npm start`. 

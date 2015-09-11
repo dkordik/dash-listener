@@ -1,5 +1,5 @@
 import ButtonRegistrar from './lib/button-registrar.js';
-var buttonRegistrar = new ButtonRegistrar();
+const buttonRegistrar = new ButtonRegistrar();
 
 import { toggleLights } from './lib/lights';
 
